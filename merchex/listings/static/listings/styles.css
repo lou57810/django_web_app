@@ -1,0 +1,17 @@
+nav {
+    background: blue;
+    height: 40px;
+    }
+nav a {
+    padding: 20px;
+    font-size: 30px;
+    color: white;
+    }
+a {
+    color: orange;
+    }
+
+body {
+    background-color: grey;
+    }
+

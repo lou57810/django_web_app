@@ -1,0 +1,18 @@
+
+{% extends 'listings/base.html' %}
+
+{% block content %}
+ <h2>{{ article.title }}</h2>
+ <ul>
+  <li>Description : {{ article.description }}</li>
+  <li>A vendre : {{ article.sold|yesno }}</li>
+  <li>Datation: {{ article.year_formed }}</li>
+  <li>Type: {{ article.type }}</li>
+ </ul>
+
+<a href="{% url 'listing-list' %}">Retour au listing</a>
+<a href="{% url 'data-update' article.id %}">Modifier les annonces</a>
+<a href="{% url 'listing-delete' article.id %}">Supprimer</a>
+{% endblock %}
+
+
